@@ -69,17 +69,12 @@ I chose to implement a **Task Management System** where:
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                         TASKS TABLE                          │
+│                         TASKS TABLE                         │
 ├─────────────────────────────────────────────────────────────┤
 │ id          │ UUID (PK)      │ Unique task identifier       │
 │ title       │ VARCHAR(200)   │ Task title (required)        │
 │ description │ TEXT           │ Detailed description         │
-│ summary     │ TEXT           │ AI-generated summary (null)  │
-│ status      │ ENUM           │ Task status                  │
-│ priority    │ ENUM           │ Priority level               │
-│ due_date    │ TIMESTAMP      │ Optional due date            │
-│ created_at  │ TIMESTAMP      │ Creation timestamp           │
-│ updated_at  │ TIMESTAMP      │ Last update timestamp        │
+│ summary     │ TEXT           │ AI-generated summary (null)  │        │
 └─────────────────────────────────────────────────────────────┘
 
 INDEXES:
@@ -129,8 +124,6 @@ backend/
 ├── main.py                    # Application entry point
 ├── requirements.txt           # Python dependencies
 ├── .env.example              # Environment template
-├── Dockerfile                # Container configuration
-├── docker-compose.yml        # Multi-container setup
 └── README.md                 # This file
 ```
 
